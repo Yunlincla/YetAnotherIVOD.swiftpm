@@ -11,14 +11,13 @@ import LYFetcher
 /// 最新委員發言列表
 struct LatestSpeechList: View {
     @State var searchText = ""
-    @State var isPresented = false
     @State var speechList: [LegislatorSpeech]?
     @Binding var selectedVideo: LegislatorSpeech?
     var body: some View {
         LoadableView(value: $speechList, loader: FetchNewestSpeech) { list in
             List(selection: $selectedVideo) {
                 ForEach(list, id: \.self) { speech in
-                    SpeechCell(speech: speech)
+                    Cell(speech: speech)
                 }
             }
         }
@@ -26,7 +25,7 @@ struct LatestSpeechList: View {
         .searchable(text: $searchText)
     }
     
-    func SpeechCell(speech: LegislatorSpeech) -> some View {
+    func Cell(speech: LegislatorSpeech) -> some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
                 Text(speech.meetingTypeName) // 會議類型

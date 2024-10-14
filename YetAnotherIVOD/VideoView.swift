@@ -49,6 +49,7 @@ struct VideoView<Video>: View where Video: VideoInfo {
     }
 }
 
+// 241015: 目前會遇到VideoPlayer無法正常預覽的情況。
 #Preview {
     VideoView(selectedVideo: GetExample.GetLegislatorSpeech())
         .frame(width: 500, height: 400)

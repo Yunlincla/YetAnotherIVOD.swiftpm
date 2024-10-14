@@ -10,7 +10,7 @@ import LYFetcher
 
 struct RootView: View {
     @State var searchLegislatorText: String = ""
-    @State var sideBarSelection: SideBarSelection? = .Latest
+    @State var sideBarSelection: SideBarSelection? = .Meeting
     enum SideBarSelection: Hashable {
         // 最新、個別委員、院會、黨團、各大委員會
         // list.bullet.indent -> 程序委員會
@@ -32,7 +32,7 @@ struct RootView: View {
                 Label("最新發言片段", systemImage: "sparkles")
             }
             NavigationLink(value: SideBarSelection.Meeting) {
-                Label("會議", systemImage: "person.2.fill")
+                Label("會議完整影片", systemImage: "person.2.fill")
             }
         }
     }
@@ -41,6 +41,8 @@ struct RootView: View {
     func Content() -> some View {
         Group {
             switch(sideBarSelection) {
+            case .Meeting:
+                MeetingList(selectedVideo: $selectedMeetingVideo)
             default:
                 LatestSpeechList(selectedVideo: $selectedSpeechVideo)
             }

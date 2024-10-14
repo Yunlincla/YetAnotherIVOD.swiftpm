@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC4EF2432CBD8017007ADACA /* MeetingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4EF2422CBD8017007ADACA /* MeetingList.swift */; };
 		DCF4D16E2CBAA6A100D30DC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF4D1632CBAA6A100D30DC6 /* Assets.xcassets */; };
 		DCF4D16F2CBAA6A100D30DC6 /* LoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF4D1642CBAA6A100D30DC6 /* LoadableView.swift */; };
 		DCF4D1702CBAA6A100D30DC6 /* ListButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF4D1652CBAA6A100D30DC6 /* ListButtonStyle.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC4EF2422CBD8017007ADACA /* MeetingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingList.swift; sourceTree = "<group>"; };
 		DCF4D1512CBAA66900D30DC6 /* YetAnotherIVOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YetAnotherIVOD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF4D1632CBAA6A100D30DC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCF4D1642CBAA6A100D30DC6 /* LoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadableView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				DCF4D16D2CBAA6A100D30DC6 /* YetAnotherIVODApp.swift */,
 				DCF4D1672CBAA6A100D30DC6 /* RootView.swift */,
 				DCF4D16C2CBAA6A100D30DC6 /* LatestSpeechList.swift */,
+				DC4EF2422CBD8017007ADACA /* MeetingList.swift */,
 				DCF4D1662CBAA6A100D30DC6 /* VideoView.swift */,
 				DCF4D1652CBAA6A100D30DC6 /* ListButtonStyle.swift */,
 				DCF4D1642CBAA6A100D30DC6 /* LoadableView.swift */,
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCF4D1762CBAA6A100D30DC6 /* YetAnotherIVODApp.swift in Sources */,
+				DC4EF2432CBD8017007ADACA /* MeetingList.swift in Sources */,
 				DCF4D1752CBAA6A100D30DC6 /* LatestSpeechList.swift in Sources */,
 				DCF4D1722CBAA6A100D30DC6 /* RootView.swift in Sources */,
 				DCF4D1712CBAA6A100D30DC6 /* VideoView.swift in Sources */,
