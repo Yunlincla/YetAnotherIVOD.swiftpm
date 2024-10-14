@@ -1,0 +1,15 @@
+{
+  "originHash" : "ab91aeaef777e353d686f1572eb857cd5e67d3f15146cc53b7709bf80cccd743",
+  "pins" : [
+    {
+      "identity" : "lyfetcher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Yunlincla/LYFetcher.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "150e2c489210d0182227c2f8d3765e1da962ed44"
+      }
+    }
+  ],
+  "version" : 3
+}
