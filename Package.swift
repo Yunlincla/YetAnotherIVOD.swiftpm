@@ -22,6 +22,7 @@ let package = Package(
             displayVersion: "1.0",
             bundleVersion: "1",
             appIcon: .asset("AppIcon"),
+            accentColor: .presetColor(.blue),
             supportedDeviceFamilies: [
                 .pad,
                 .phone
@@ -38,13 +39,13 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/Yunlincla/LYFetcher", branch: "main")
+        .package(url: "https://github.com/Yunlincla/LYFetcher", .branch("main"))
     ],
     targets: [
         .executableTarget(
             name: "YetAnotherIVOD",
             dependencies: [
-                .product(name: "LYFetcher", package: "lyfetcher"),
+                .product(name: "LYFetcher", package: "lyfetcher")
             ],
             path: "./YetAnotherIVOD",
             swiftSettings: [
